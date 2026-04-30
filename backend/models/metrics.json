@@ -1,0 +1,82 @@
+{
+    "Logistic Regression": {
+        "Accuracy": 0.8041,
+        "Precision": 0.6655,
+        "Recall": 0.5267,
+        "F1 Score": 0.5881,
+        "ROC AUC": 0.8463,
+        "Training Time": 0.1557
+    },
+    "Decision Tree": {
+        "Accuracy": 0.7218,
+        "Precision": 0.4766,
+        "Recall": 0.4893,
+        "F1 Score": 0.4828,
+        "ROC AUC": 0.6471,
+        "Training Time": 0.2082
+    },
+    "Random Forest": {
+        "Accuracy": 0.7807,
+        "Precision": 0.6109,
+        "Recall": 0.4786,
+        "F1 Score": 0.5367,
+        "ROC AUC": 0.823,
+        "Training Time": 2.8419
+    },
+    "Gradient Boosting": {
+        "Accuracy": 0.802,
+        "Precision": 0.6667,
+        "Recall": 0.508,
+        "F1 Score": 0.5766,
+        "ROC AUC": 0.8425,
+        "Training Time": 3.198
+    },
+    "AdaBoost": {
+        "Accuracy": 0.7942,
+        "Precision": 0.6346,
+        "Recall": 0.5294,
+        "F1 Score": 0.5773,
+        "ROC AUC": 0.8432,
+        "Training Time": 0.3706
+    },
+    "SVM": {
+        "Accuracy": 0.7977,
+        "Precision": 0.6642,
+        "Recall": 0.4813,
+        "F1 Score": 0.5581,
+        "ROC AUC": 0.7941,
+        "Training Time": 4.9673
+    },
+    "KNN": {
+        "Accuracy": 0.7452,
+        "Precision": 0.5209,
+        "Recall": 0.5,
+        "F1 Score": 0.5102,
+        "ROC AUC": 0.7579,
+        "Training Time": 0.3985
+    },
+    "XGBoost": {
+        "Accuracy": 0.7779,
+        "Precision": 0.5993,
+        "Recall": 0.492,
+        "F1 Score": 0.5404,
+        "ROC AUC": 0.8156,
+        "Training Time": 1.8237
+    },
+    "LightGBM": {
+        "Accuracy": 0.7928,
+        "Precision": 0.6367,
+        "Recall": 0.5107,
+        "F1 Score": 0.5668,
+        "ROC AUC": 0.8298,
+        "Training Time": 0.4537
+    },
+    "CatBoost": {
+        "Accuracy": 0.7991,
+        "Precision": 0.6532,
+        "Recall": 0.5187,
+        "F1 Score": 0.5782,
+        "ROC AUC": 0.8379,
+        "Training Time": 14.4862
+    }
+}
