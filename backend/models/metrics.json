@@ -1,82 +1,82 @@
 {
     "Logistic Regression": {
-        "Accuracy": 0.8041,
-        "Precision": 0.6655,
-        "Recall": 0.5267,
-        "F1 Score": 0.5881,
-        "ROC AUC": 0.8463,
-        "Training Time": 0.1557
+        "Accuracy": 0.7984,
+        "Precision": 0.6406,
+        "Recall": 0.5481,
+        "F1 Score": 0.5908,
+        "ROC AUC": 0.8404,
+        "Training Time": 0.0581
     },
     "Decision Tree": {
-        "Accuracy": 0.7218,
-        "Precision": 0.4766,
-        "Recall": 0.4893,
-        "F1 Score": 0.4828,
-        "ROC AUC": 0.6471,
-        "Training Time": 0.2082
+        "Accuracy": 0.7175,
+        "Precision": 0.4701,
+        "Recall": 0.5053,
+        "F1 Score": 0.4871,
+        "ROC AUC": 0.6495,
+        "Training Time": 0.0612
     },
     "Random Forest": {
-        "Accuracy": 0.7807,
-        "Precision": 0.6109,
-        "Recall": 0.4786,
-        "F1 Score": 0.5367,
-        "ROC AUC": 0.823,
-        "Training Time": 2.8419
+        "Accuracy": 0.7793,
+        "Precision": 0.609,
+        "Recall": 0.4706,
+        "F1 Score": 0.5309,
+        "ROC AUC": 0.8228,
+        "Training Time": 1.3106
     },
     "Gradient Boosting": {
-        "Accuracy": 0.802,
-        "Precision": 0.6667,
-        "Recall": 0.508,
-        "F1 Score": 0.5766,
-        "ROC AUC": 0.8425,
-        "Training Time": 3.198
+        "Accuracy": 0.807,
+        "Precision": 0.6809,
+        "Recall": 0.5134,
+        "F1 Score": 0.5854,
+        "ROC AUC": 0.843,
+        "Training Time": 2.1955
     },
     "AdaBoost": {
-        "Accuracy": 0.7942,
-        "Precision": 0.6346,
-        "Recall": 0.5294,
-        "F1 Score": 0.5773,
-        "ROC AUC": 0.8432,
-        "Training Time": 0.3706
+        "Accuracy": 0.7956,
+        "Precision": 0.6405,
+        "Recall": 0.5241,
+        "F1 Score": 0.5765,
+        "ROC AUC": 0.8424,
+        "Training Time": 0.5082
     },
     "SVM": {
-        "Accuracy": 0.7977,
-        "Precision": 0.6642,
-        "Recall": 0.4813,
-        "F1 Score": 0.5581,
-        "ROC AUC": 0.7941,
-        "Training Time": 4.9673
+        "Accuracy": 0.7942,
+        "Precision": 0.6533,
+        "Recall": 0.4786,
+        "F1 Score": 0.5525,
+        "ROC AUC": 0.7911,
+        "Training Time": 10.0273
     },
     "KNN": {
-        "Accuracy": 0.7452,
-        "Precision": 0.5209,
-        "Recall": 0.5,
-        "F1 Score": 0.5102,
-        "ROC AUC": 0.7579,
-        "Training Time": 0.3985
+        "Accuracy": 0.7488,
+        "Precision": 0.5269,
+        "Recall": 0.5241,
+        "F1 Score": 0.5255,
+        "ROC AUC": 0.7617,
+        "Training Time": 0.5238
     },
     "XGBoost": {
-        "Accuracy": 0.7779,
-        "Precision": 0.5993,
+        "Accuracy": 0.7757,
+        "Precision": 0.5935,
         "Recall": 0.492,
-        "F1 Score": 0.5404,
-        "ROC AUC": 0.8156,
-        "Training Time": 1.8237
+        "F1 Score": 0.538,
+        "ROC AUC": 0.8174,
+        "Training Time": 0.7913
     },
     "LightGBM": {
         "Accuracy": 0.7928,
-        "Precision": 0.6367,
-        "Recall": 0.5107,
-        "F1 Score": 0.5668,
-        "ROC AUC": 0.8298,
-        "Training Time": 0.4537
+        "Precision": 0.6331,
+        "Recall": 0.5214,
+        "F1 Score": 0.5718,
+        "ROC AUC": 0.8354,
+        "Training Time": 0.3895
     },
     "CatBoost": {
-        "Accuracy": 0.7991,
-        "Precision": 0.6532,
-        "Recall": 0.5187,
-        "F1 Score": 0.5782,
-        "ROC AUC": 0.8379,
-        "Training Time": 14.4862
+        "Accuracy": 0.797,
+        "Precision": 0.6477,
+        "Recall": 0.516,
+        "F1 Score": 0.5744,
+        "ROC AUC": 0.8391,
+        "Training Time": 3.2086
     }
 }

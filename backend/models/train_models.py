@@ -38,6 +38,8 @@ def train_all_models():
     X = df.drop("Churn", axis=1)
     y = df["Churn"]
 
+    feature_columns = X.columns.tolist()
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y
     )
@@ -57,14 +59,18 @@ def train_all_models():
         "CatBoost": CatBoostClassifier(verbose=0)
     }
 
+    scaled_models = ["Logistic Regression", "SVM", "KNN"]
+
     metrics = {}
     best_model = None
     best_score = 0
+    best_model_name = ""
+    best_requires_scaling = False
 
     for name, model in models.items():
         start = time.time()
 
-        if name in ["Logistic Regression", "SVM", "KNN"]:
+        if name in scaled_models:
             model.fit(X_train_scaled, y_train)
             preds = model.predict(X_test_scaled)
             probs = model.predict_proba(X_test_scaled)[:, 1]
@@ -94,10 +100,21 @@ def train_all_models():
         if f1 > best_score:
             best_score = f1
             best_model = model
+            best_model_name = name
+            best_requires_scaling = name in scaled_models
 
     joblib.dump(best_model, MODEL_SAVE_PATH + "best_churn_model.pkl")
     joblib.dump(encoders, MODEL_SAVE_PATH + "label_encoders.pkl")
     joblib.dump(scaler, MODEL_SAVE_PATH + "scaler.pkl")
+    joblib.dump(feature_columns, MODEL_SAVE_PATH + "feature_columns.pkl")
+
+    metadata = {
+        "best_model_name": best_model_name,
+        "requires_scaling": best_requires_scaling
+    }
+
+    with open(MODEL_SAVE_PATH + "model_metadata.json", "w") as f:
+        json.dump(metadata, f, indent=4)
 
     with open(METRICS_PATH, "w") as f:
         json.dump(metrics, f, indent=4)
